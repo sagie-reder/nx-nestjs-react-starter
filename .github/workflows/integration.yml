@@ -26,4 +26,4 @@ jobs:
         run: npm run affected:lint
 
       - name: Test affected Files
-        run: npm run affected:test
+        run: npm run affected:test -- --parallel --configuration=ci --codeCoverage --collectCoverage  --coverageReporters=json --skip-nx-cache --max-parallel=1
